@@ -1,0 +1,11 @@
+---
+
+- name: Installing ELK, Grafana, Nagios, Prometheus  on ubuntu
+  hosts: all
+  become: yes
+  roles:
+    - ELK
+    - Grafana
+    - Nagios
+    - Prometheus
+ 
